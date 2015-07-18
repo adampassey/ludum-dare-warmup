@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1f90d3bb20b935149b5b6366fca2e48c
-timeCreated: 1437244572
+timeCreated: 1437247051
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,8 @@ TextureImporter:
     21300002: burroughs_walking_1
     21300004: burroughs_walking_2
     21300006: burroughs_attack
+    21300008: burroughs_get_some_1
+    21300010: burroughs_get_some_2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -90,6 +92,26 @@ TextureImporter:
         y: 141
         width: 25
         height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: burroughs_get_some_1
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 117
+        width: 28
+        height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: burroughs_get_some_2
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 117
+        width: 28
+        height: 19
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
