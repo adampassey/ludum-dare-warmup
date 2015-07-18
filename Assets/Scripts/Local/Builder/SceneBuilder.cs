@@ -12,6 +12,10 @@ public class SceneBuilder : MonoBehaviour {
             gameManagerObject = GameObject.Instantiate(Resources.Load(Prefabs.GAME_MANAGER) as GameObject);
             gameManager = gameManagerObject.GetComponent<GameManager>();
         }
+        else {
+            gameManager = gameManagerObject.GetComponent<GameManager>();
+            gameManager.day ++;
+        }
 	}
 	
 	// Update is called once per frame

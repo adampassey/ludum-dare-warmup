@@ -7,6 +7,7 @@ public class Door : MonoBehaviour {
         PlayerController playerController = other.GetComponent<PlayerController>();
         if (playerController != null) {
             Debug.Log("Player reached door!");
+            Application.LoadLevel(Scenes.BENCH_SCENE);
         }
     }
 }

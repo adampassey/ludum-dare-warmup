@@ -11,7 +11,7 @@ GameObject:
   - 114: {fileID: 11425202}
   m_Layer: 0
   m_Name: Game Manager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,6 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac42c8e63e1c52248827f75c4234fe1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  day: 1
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
