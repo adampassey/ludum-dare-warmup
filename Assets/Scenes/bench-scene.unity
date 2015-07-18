@@ -199,6 +199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 15
+  divideStaminaBy: 50
 --- !u!4 &733763129
 Transform:
   m_ObjectHideFlags: 0

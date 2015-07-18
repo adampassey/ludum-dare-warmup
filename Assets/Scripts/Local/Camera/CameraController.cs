@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour {
 
         Vector3 targetPos = target.transform.position;
         targetPos.z = transform.position.z;
+        targetPos.y = transform.position.y;
 
         moveDirection = targetPos - transform.position;
 	}

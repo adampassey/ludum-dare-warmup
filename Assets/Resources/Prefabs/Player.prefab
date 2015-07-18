@@ -91,7 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalStamina: 10
   stamina: 10
-  fatiguePerSecond: .100000001
+  fatiguePerSecond: .400000006
   fatigueOnPunch: 1
   staminaSliderObject: {fileID: 0}
 --- !u!114 &11478474
