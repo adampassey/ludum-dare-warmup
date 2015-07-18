@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour {
         Vector3 movementDirection = Vector3.zero;
         movementDirection.x = horizontalInput;
 
+        //  move!
         navigator.Move(movementDirection);
 	}
 }
