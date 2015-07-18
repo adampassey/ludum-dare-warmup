@@ -17,6 +17,13 @@ public class SceneBuilder : MonoBehaviour {
         else {
             gameManager = gameManagerObject.GetComponent<GameManager>();
             gameManager.day ++;
+
+            //  increment stamina accordingly
+            GameObject playerObject = GameObject.FindGameObjectWithTag(Tags.PLAYER);
+            Player player = playerObject.GetComponent<Player>();
+            player.totalStamina += gameManager.staminaAddition;
+
+            gameManager.staminaAddition = 0;
         }
 
         levelScene = GameObject.FindGameObjectWithTag(Tags.LEVEL_SCENE).GetComponent<LevelScene>();

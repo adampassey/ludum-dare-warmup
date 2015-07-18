@@ -4,6 +4,7 @@ using System.Collections;
 public class BenchScene : MonoBehaviour {
 
     public int timer = 15;
+    public static int staminaAddition = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -14,7 +15,7 @@ public class BenchScene : MonoBehaviour {
         timer--;
 
         if (timer <= 0) {
-            Debug.Log("Transitioning to other scene");
+            Debug.Log("Transitioning to other scene, adding stamina: " + staminaAddition);
             Application.LoadLevel(Scenes.LEVEL_SCENE);
         }
 

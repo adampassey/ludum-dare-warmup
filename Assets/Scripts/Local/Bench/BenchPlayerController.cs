@@ -22,4 +22,8 @@ public class BenchPlayerController : MonoBehaviour {
             animator.SetBool(GET_SOME, false);
         }
 	}
+
+    public void Benched() {
+        BenchScene.staminaAddition++;
+    }
 }
