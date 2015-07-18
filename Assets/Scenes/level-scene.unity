@@ -124,11 +124,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 464894, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: doorOffset.y
-      value: 6.5
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9616450433277474e88ca723a5e38ee1, type: 2}

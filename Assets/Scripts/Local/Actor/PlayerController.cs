@@ -21,5 +21,11 @@ public class PlayerController : MonoBehaviour {
 
         //  move!
         navigator.Move(movementDirection);
+
+        //  attack
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            player.Attack();
+        }
+        
 	}
 }
