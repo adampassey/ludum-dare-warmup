@@ -3,13 +3,10 @@ using System.Collections;
 
 public class LevelScene : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    public void SpawnDoor(int day) {
+        Vector3 position = Vector3.zero;
+        position.x = 5 * day + 10;
+
+        GameObject doorObject = GameObject.Instantiate(Resources.Load(Prefabs.DOOR), position, Quaternion.identity) as GameObject;
+    }
 }
