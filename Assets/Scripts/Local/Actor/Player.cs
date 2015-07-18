@@ -36,4 +36,8 @@ public class Player : MonoBehaviour {
         attacking = false;
         animator.SetBool(ATTACKING, attacking);
     }
+
+    public bool IsAttacking() {
+        return attacking;
+    }
 }

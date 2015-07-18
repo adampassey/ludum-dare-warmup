@@ -19,7 +19,7 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 21300006, guid: 1f90d3bb20b935149b5b6366fca2e48c, type: 3}
-    - time: .0833333358
+    - time: .0333333351
       value: {fileID: 21300006, guid: 1f90d3bb20b935149b5b6366fca2e48c, type: 3}
     attribute: m_Sprite
     path: 
@@ -44,7 +44,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .100000001
+    m_StopTime: .0500000045
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -64,7 +64,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
   m_Events:
-  - time: .0833333358
+  - time: .0333333351
     functionName: StopAttacking
     data: 
     objectReferenceParameter: {fileID: 0}
