@@ -16,18 +16,18 @@ public class SceneBuilder : MonoBehaviour {
         }
         else {
             gameManager = gameManagerObject.GetComponent<GameManager>();
-            gameManager.day ++;
+            GameManager.day ++;
 
             //  increment stamina accordingly
             GameObject playerObject = GameObject.FindGameObjectWithTag(Tags.PLAYER);
             Player player = playerObject.GetComponent<Player>();
-            player.totalStamina += gameManager.staminaAddition;
+            player.totalStamina += GameManager.staminaAddition;
 
-            gameManager.staminaAddition = 0;
+            GameManager.staminaAddition = 0;
         }
 
         levelScene = GameObject.FindGameObjectWithTag(Tags.LEVEL_SCENE).GetComponent<LevelScene>();
-        levelScene.SpawnDoor(gameManager.day);
+        levelScene.SpawnDoor(GameManager.day);
 	}
 	
 	// Update is called once per frame
