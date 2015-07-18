@@ -4,10 +4,12 @@ using System.Collections;
 public class PlayerController : MonoBehaviour {
 
     private Navigator navigator;
+    private Player player;
 
 	// Use this for initialization
 	void Start () {
         navigator = GetComponent<Navigator>();
+        player = GetComponent<Player>();
 	}
 	
 	// Update is called once per frame
