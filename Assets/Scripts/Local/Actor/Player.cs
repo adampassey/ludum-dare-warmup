@@ -15,6 +15,7 @@ public class Player : MonoBehaviour {
     private static readonly string ATTACKING = "Attacking";
     private static readonly string REAPING = "Reaping";
     private bool attacking = false;
+    private bool reaping = false;
 
     private Animator animator;
     private Slider staminaSlider;
@@ -29,9 +30,16 @@ public class Player : MonoBehaviour {
         controller = GetComponent<PlayerController>();
 
         InvokeRepeating("applyFatigue", 1f, 1f);
-        animator.SetBool(REAPING, true);
 
         stamina = totalStamina;
+    }
+
+    public void Update() {
+        if (!alive) {
+            return;
+        }
+
+
     }
 
     public void applyFatigue() {
