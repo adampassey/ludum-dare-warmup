@@ -42,7 +42,7 @@ public class LevelScene : MonoBehaviour {
             if (Random.Range(0f, 1) <= enemyFrequency) {
                 GameObject enemy = enemiesToSpawn[Random.Range(0, enemiesToSpawn.Length)];
                 Vector3 enemyPosition = Vector3.zero;
-                enemyPosition.x = i * 3f;
+                enemyPosition.x = position.x;
                 enemyPosition.y = -0.2f;
                 enemyPosition.z = 0.5f;
 

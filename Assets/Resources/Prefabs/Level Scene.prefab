@@ -41,6 +41,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorOffset: {x: 30, y: 7.0999999, z: 1}
   doorDistance: 50
+  enemyFrequency: .699999988
+  enemiesToSpawn:
+  - {fileID: 193740, guid: 0b5e3287166ae6f4688f91482de33f98, type: 2}
+  - {fileID: 188870, guid: e2f8f477c101f13488ef2c6d961badff, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

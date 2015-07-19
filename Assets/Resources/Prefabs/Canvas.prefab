@@ -146,6 +146,7 @@ GameObject:
   - 224: {fileID: 22410206}
   - 222: {fileID: 22277438}
   - 114: {fileID: 11487190}
+  - 114: {fileID: 11407958}
   m_Layer: 5
   m_Name: Reaping Label
   m_TagString: Untagged
@@ -234,6 +235,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d313740143c68e4f8f659defc5391d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11407958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea0469229207f5438110a9ae6c0f502, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showForSeconds: 2
+  textLabel: REAPING!
 --- !u!114 &11423780
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -478,7 +492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: REAPING!
+  m_Text: 
 --- !u!114 &11498430
 MonoBehaviour:
   m_ObjectHideFlags: 1

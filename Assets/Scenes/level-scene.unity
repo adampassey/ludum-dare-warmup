@@ -94,10 +94,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: enemiesToSpawn.Array.size
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 464894, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -129,22 +125,6 @@ Prefab:
     - target: {fileID: 464894, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: enemiesToSpawn.Array.data[0]
-      value: 
-      objectReference: {fileID: 193740, guid: 0b5e3287166ae6f4688f91482de33f98, type: 2}
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: doorDistance
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: enemiesToSpawn.Array.data[1]
-      value: 
-      objectReference: {fileID: 188870, guid: e2f8f477c101f13488ef2c6d961badff, type: 2}
-    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
-      propertyPath: enemyFrequency
-      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
@@ -529,10 +509,6 @@ Prefab:
     - target: {fileID: 22475264, guid: 9eaba674ce834ad498834ccb96a72432, type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11487190, guid: 9eaba674ce834ad498834ccb96a72432, type: 2}
-      propertyPath: m_Text
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9eaba674ce834ad498834ccb96a72432, type: 2}
