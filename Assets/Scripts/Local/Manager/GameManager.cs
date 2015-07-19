@@ -11,4 +11,10 @@ public class GameManager : MonoBehaviour {
 	void Start () {
         DontDestroyOnLoad(this);
 	}
+
+    public static void Reset() {
+        day = 0;
+        staminaAddition = 0;
+        score = 0;
+    }
 }

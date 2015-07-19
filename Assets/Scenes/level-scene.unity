@@ -96,7 +96,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: enemiesToSpawn.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 464894, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: m_LocalPosition.x
@@ -137,6 +137,14 @@ Prefab:
     - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
       propertyPath: doorDistance
       value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
+      propertyPath: enemiesToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 188870, guid: e2f8f477c101f13488ef2c6d961badff, type: 2}
+    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
+      propertyPath: enemyFrequency
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
