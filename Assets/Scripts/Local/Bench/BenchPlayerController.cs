@@ -4,12 +4,14 @@ using System.Collections;
 public class BenchPlayerController : MonoBehaviour {
 
     private Animator animator;
+    private AudioSource audioSource;
 
     private static readonly string GET_SOME = "Getting Some";
 
 	// Use this for initialization
 	void Start () {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
