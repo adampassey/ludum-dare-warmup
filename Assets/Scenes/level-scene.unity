@@ -365,6 +365,10 @@ Prefab:
       propertyPath: staminaSliderObject
       value: 
       objectReference: {fileID: 1522768686}
+    - target: {fileID: 11431160, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
+      propertyPath: killsToInitiateReaping
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
   m_IsPrefabParent: 0

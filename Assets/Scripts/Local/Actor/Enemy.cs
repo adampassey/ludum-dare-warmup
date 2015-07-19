@@ -16,6 +16,7 @@ public class Enemy : MonoBehaviour {
 
     public void Die() {
         GameObject bloodSplosion = GameObject.Instantiate(Resources.Load(Prefabs.BLOOD_SPLOSION), transform.position, Quaternion.identity) as GameObject;
+        GameManager.killCount++;
         GameManager.score += 10;
         Destroy(gameObject);
     }

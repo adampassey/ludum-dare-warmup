@@ -9,6 +9,8 @@ public class Player : MonoBehaviour {
     public float stamina = 10f;
     public float fatiguePerSecond = 0.1f;
     public float fatigueOnPunch = 1f;
+    public int killsToInitiateReaping = 10;
+    public float reapTime = 10;
 
     public GameObject staminaSliderObject;
 
@@ -39,7 +41,9 @@ public class Player : MonoBehaviour {
             return;
         }
 
-
+        if (GameManager.killCount >= killsToInitiateReaping) {
+            reap();
+        }
     }
 
     public void applyFatigue() {
@@ -83,5 +87,17 @@ public class Player : MonoBehaviour {
 
     private void displayGameOverScreen() {
         Application.LoadLevel(Scenes.GAME_OVER_SCENE);
+    }
+
+    private void reap() {
+        reaping = true;
+        animator.SetBool(REAPING, true);
+
+        Invoke("stopReaping", reapTime);
+    }
+
+    private void stopReaping() {
+        reaping = false;
+        animator.SetBool(REAPING, false);
     }
 }
