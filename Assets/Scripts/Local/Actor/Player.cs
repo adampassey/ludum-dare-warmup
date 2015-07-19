@@ -17,11 +17,15 @@ public class Player : MonoBehaviour {
 
     private Animator animator;
     private Slider staminaSlider;
+    private PlayerController controller;
+
+    private bool alive = true;
 
     public void Start() {
 
         animator = GetComponent<Animator>();
         staminaSlider = staminaSliderObject.GetComponent<Slider>();
+        controller = GetComponent<PlayerController>();
 
         InvokeRepeating("applyFatigue", 1f, 1f);
 
@@ -29,6 +33,10 @@ public class Player : MonoBehaviour {
     }
 
     public void applyFatigue() {
+        if (!alive) {
+            return;
+        }
+
         stamina -= fatiguePerSecond;
 
         if (staminaSlider != null) {
@@ -37,8 +45,7 @@ public class Player : MonoBehaviour {
 
         //  player died
         if (stamina <= 0f) {
-            //  TODO: might want to do a die animation or something
-            Application.LoadLevel(Scenes.GAME_OVER_SCENE);
+            Die();
         }
     }
 
@@ -55,5 +62,16 @@ public class Player : MonoBehaviour {
 
     public bool IsAttacking() {
         return attacking;
+    }
+
+    private void Die() {
+        controller.gameObject.SetActive(false);
+        GameObject.Instantiate(Resources.Load(Prefabs.BLOOD_SPLOSION), transform.position, Quaternion.identity);
+        Invoke("displayGameOverScreen", 3f);
+        alive = false;
+    }
+
+    private void displayGameOverScreen() {
+        Application.LoadLevel(Scenes.GAME_OVER_SCENE);
     }
 }
