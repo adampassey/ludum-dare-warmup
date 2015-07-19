@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     public float reapTime = 10;
 
     public GameObject staminaSliderObject;
+    public GameObject reapingLabelObject;
 
     private static readonly string ATTACKING = "Attacking";
     private static readonly string REAPING = "Reaping";
@@ -23,6 +24,7 @@ public class Player : MonoBehaviour {
     private Navigator navigator;
     private Slider staminaSlider;
     private PlayerController controller;
+    private ReapingLabel reapingLabel;
 
     private bool alive = true;
 
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour {
         navigator = GetComponent<Navigator>();
         staminaSlider = staminaSliderObject.GetComponent<Slider>();
         controller = GetComponent<PlayerController>();
+        reapingLabel = reapingLabelObject.GetComponent<ReapingLabel>();
 
         InvokeRepeating("applyFatigue", 1f, 1f);
 
@@ -43,7 +46,7 @@ public class Player : MonoBehaviour {
             return;
         }
 
-        if (GameManager.killCount >= killsToInitiateReaping) {
+        if (GameManager.killCount >= killsToInitiateReaping && !reaping) {
             reap();
         }
     }
@@ -116,6 +119,7 @@ public class Player : MonoBehaviour {
     private void reap() {
         reaping = true;
         animator.SetBool(REAPING, true);
+        reapingLabel.Show();
 
         Invoke("stopReaping", reapTime);
     }
