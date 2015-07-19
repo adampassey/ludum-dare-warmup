@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
     public GameObject staminaSliderObject;
 
     private static readonly string ATTACKING = "Attacking";
+    private static readonly string REAPING = "Reaping";
     private bool attacking = false;
 
     private Animator animator;
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour {
         controller = GetComponent<PlayerController>();
 
         InvokeRepeating("applyFatigue", 1f, 1f);
+        animator.SetBool(REAPING, true);
 
         stamina = totalStamina;
     }

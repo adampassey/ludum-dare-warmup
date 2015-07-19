@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 1f90d3bb20b935149b5b6366fca2e48c
-timeCreated: 1437247051
+timeCreated: 1437324642
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,9 @@ TextureImporter:
     21300006: burroughs_attack
     21300008: burroughs_get_some_1
     21300010: burroughs_get_some_2
+    21300012: burroughs_reaping_1
+    21300014: burroughs_reaping_2
+    21300016: burroughs_reaping_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -112,6 +115,36 @@ TextureImporter:
         y: 117
         width: 28
         height: 19
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: burroughs_reaping_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 83
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: burroughs_reaping_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 83
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: burroughs_reaping_3
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 83
+        width: 28
+        height: 28
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
