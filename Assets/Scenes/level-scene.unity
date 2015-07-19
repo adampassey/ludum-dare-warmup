@@ -126,6 +126,18 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
+      propertyPath: enemiesToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 188870, guid: e2f8f477c101f13488ef2c6d961badff, type: 2}
+    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
+      propertyPath: enemiesToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 188870, guid: e2f8f477c101f13488ef2c6d961badff, type: 2}
+    - target: {fileID: 11450626, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
+      propertyPath: enemyFrequency
+      value: .800000012
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9616450433277474e88ca723a5e38ee1, type: 2}
   m_IsPrefabParent: 0
@@ -354,6 +366,10 @@ Prefab:
       propertyPath: reapingLabelObject
       value: 
       objectReference: {fileID: 1614818507}
+    - target: {fileID: 11431160, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
+      propertyPath: killsToInitiateReaping
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
   m_IsPrefabParent: 0
