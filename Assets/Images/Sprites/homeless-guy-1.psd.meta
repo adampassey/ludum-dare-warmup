@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0814fb4ad9d4a4e429f599cb57d3d31b
-timeCreated: 1437265356
+timeCreated: 1437266845
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,9 +65,9 @@ TextureImporter:
     - name: homeless-guy-1_1
       rect:
         serializedVersion: 2
-        x: 18
+        x: 19
         y: 0
-        width: 19
+        width: 18
         height: 25
       alignment: 0
       pivot: {x: .5, y: .5}

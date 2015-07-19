@@ -20,6 +20,7 @@ public class BenchScene : MonoBehaviour {
             Debug.Log("Transitioning to other scene, adding stamina: " + staminaAddition);
 
             GameManager.staminaAddition += staminaAddition / divideStaminaBy;
+            GameManager.score += staminaAddition / 4;
 
             Application.LoadLevel(Scenes.LEVEL_SCENE);
         }
