@@ -93,6 +93,8 @@ MonoBehaviour:
   stamina: 10
   fatiguePerSecond: .400000006
   fatigueOnPunch: 1
+  killsToInitiateReaping: 2
+  reapTime: 10
   staminaSliderObject: {fileID: 0}
 --- !u!114 &11478474
 MonoBehaviour:

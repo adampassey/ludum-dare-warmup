@@ -5,5 +5,6 @@ public static class Prefabs  {
     public static readonly string DOOR = "prefabs/Door";
     public static readonly string BLOOD_SPLOSION = "prefabs/Blood Splosion";
     public static readonly string ROAD = "prefabs/Road Tile";
+    public static readonly string BULLET = "prefabs/Bullet";
 
 }

@@ -20,6 +20,7 @@ public class Player : MonoBehaviour {
     private bool reaping = false;
 
     private Animator animator;
+    private Navigator navigator;
     private Slider staminaSlider;
     private PlayerController controller;
 
@@ -28,6 +29,7 @@ public class Player : MonoBehaviour {
     public void Start() {
 
         animator = GetComponent<Animator>();
+        navigator = GetComponent<Navigator>();
         staminaSlider = staminaSliderObject.GetComponent<Slider>();
         controller = GetComponent<PlayerController>();
 
@@ -47,7 +49,7 @@ public class Player : MonoBehaviour {
     }
 
     public void applyFatigue() {
-        if (!alive) {
+        if (!alive || reaping) {
             return;
         }
 
@@ -64,9 +66,31 @@ public class Player : MonoBehaviour {
     }
 
     public void Attack() {
-        attacking = true;
-        animator.SetBool(ATTACKING, attacking);
-        stamina -= fatigueOnPunch;
+        if (reaping) {
+            //  shoot bullet
+            Vector3 position = transform.position;
+            Vector2 direction = Vector2.right;
+
+            position.x += 1.5f;
+            position.y = 0.141f;
+            position.z = 0.5f;
+
+            if (!navigator.FacingRight()) {
+                direction = -Vector2.right;
+                position.x -= 3f;
+            }
+
+            GameObject bulletGameObject = GameObject.Instantiate(Resources.Load(Prefabs.BULLET)) as GameObject;
+            bulletGameObject.transform.position = position;
+
+            Bullet bullet = bulletGameObject.GetComponent<Bullet>();
+            bullet.direction = direction;
+        }
+        else {
+            attacking = true;
+            animator.SetBool(ATTACKING, attacking);
+            stamina -= fatigueOnPunch;
+        }
     }
 
     public void StopAttacking() {
@@ -99,5 +123,6 @@ public class Player : MonoBehaviour {
     private void stopReaping() {
         reaping = false;
         animator.SetBool(REAPING, false);
+        GameManager.killCount = 0;
     }
 }

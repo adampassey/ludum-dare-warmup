@@ -5,11 +5,17 @@ public class Enemy : MonoBehaviour {
 
     public void OnTriggerStay(Collider other) {
         Player player = other.GetComponent<Player>();
-        if (player == null) {
-            return;
+        Bullet bullet = other.GetComponent<Bullet>();
+
+        if (player != null) {
+            if (player.IsAttacking()) {
+                Die();
+                return;
+            }
         }
 
-        if (player.IsAttacking()) {
+        if (bullet != null) {
+            Destroy(bullet.gameObject);
             Die();
         }
     }

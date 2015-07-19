@@ -50,13 +50,19 @@ public class Navigator : MonoBehaviour {
         transform.Translate(direction * speed * Time.deltaTime);
     }
 
+    public bool FacingRight() {
+        return facingRight;
+    }
+
     private void faceLeft() {
+        facingRight = false;
         Vector3 localScale = transform.localScale;
         localScale.x = -1;
         transform.localScale = localScale;
     }
 
     private void faceRight() {
+        facingRight = true;
         Vector3 localScale = transform.localScale;
         localScale.x = 1;
         transform.localScale = localScale;

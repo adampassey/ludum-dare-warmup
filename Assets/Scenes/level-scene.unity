@@ -221,7 +221,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
 --- !u!1001 &1095538059
 Prefab:
   m_ObjectHideFlags: 0
@@ -365,10 +365,11 @@ Prefab:
       propertyPath: staminaSliderObject
       value: 
       objectReference: {fileID: 1522768686}
-    - target: {fileID: 11431160, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
-      propertyPath: killsToInitiateReaping
-      value: 2
-      objectReference: {fileID: 0}
+    - target: {fileID: 21258496, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300012, guid: 1f90d3bb20b935149b5b6366fca2e48c,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4275877170466d44987c2d5b8774f2df, type: 2}
   m_IsPrefabParent: 0
