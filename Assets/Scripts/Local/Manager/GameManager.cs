@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour {
 	}
 
     public static void Reset() {
-        day = 0;
+        day = 1;
         staminaAddition = 0;
         score = 0;
     }
