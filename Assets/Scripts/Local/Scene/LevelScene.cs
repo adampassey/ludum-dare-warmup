@@ -26,23 +26,22 @@ public class LevelScene : MonoBehaviour {
     private void makeRoadTiles(Vector3 doorPosition) {
 
         GameObject roadPrefab = Resources.Load(Prefabs.ROAD) as GameObject;
+        float lastX = 0;
 
-        for (int i = -30; i < doorPosition.x + 30; i++) {
-            Vector3 position = doorPosition;
-            position.x += i * 7.7f;
+        for (int i = 0; lastX < doorPosition.x + 30; i ++) {
+            Vector3 position = Vector3.zero;
+            position.x = i * 7.7f;
             position.y = -2.8f;
             position.z = 1;
 
-            GameObject.Instantiate(roadPrefab, position, Quaternion.identity);
+            lastX = position.x;
 
-            if (i <= 0) {
-                continue;
-            }
+            GameObject.Instantiate(roadPrefab, position, Quaternion.identity);
 
             //  should we spawn an enemy here?
             if (Random.Range(0f, 1) <= enemyFrequency) {
                 GameObject enemy = enemiesToSpawn[Random.Range(0, enemiesToSpawn.Length - 1)];
-                Vector3 enemyPosition = position;
+                Vector3 enemyPosition = Vector3.zero;
                 enemyPosition.x = i * 3f;
                 enemyPosition.y = -0.2f;
                 enemyPosition.z = 0.5f;

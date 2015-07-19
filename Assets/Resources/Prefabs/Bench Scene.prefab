@@ -40,7 +40,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 15
-  divideStaminaBy: 50
+  divideStaminaBy: 10
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
